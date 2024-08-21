@@ -11,7 +11,7 @@ COPY . /var/www/html/
 RUN docker-php-ext-install mysqli pdo pdo_mysql
 
 # Add the ServerName directive to Apache configuration
-RUN echo "ServerName localhost" >> /etc/apache2/apache2.conf
+# RUN echo "ServerName localhost" >> /etc/apache2/apache2.conf
 
 # Give necessary permissions
 #RUN chown -R www-data:www-data /var/www/html/
