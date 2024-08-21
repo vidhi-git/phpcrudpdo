@@ -1,6 +1,6 @@
 services:
   web:
-    image: vidhia/phpcrud:latest
+    build: .
     container_name: php-app
     ports:
       - "4000:80"
